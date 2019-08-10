@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MovieCard from './MovieCard';
 const Movie = (params) => {
-  const [movie, setMovie] = useState({});
+  const [movie, setMovie] = useState();
  
   useEffect(() => {
     const id = params.match.params.id;
@@ -35,6 +35,7 @@ const Movie = (params) => {
     <div className="save-wrapper">
 
     <MovieCard title={title} director={director} metascore={metascore} stars={stars} />
+    {/* <div onClick={ saveMovie } className='save-button'>Save</div> */}
     </div>
   
   );

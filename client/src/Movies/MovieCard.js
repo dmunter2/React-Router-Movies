@@ -24,3 +24,5 @@ const MovieCard = ({ title, director, metascore, stars }) => {
 
 
 export default MovieCard;
+
+
